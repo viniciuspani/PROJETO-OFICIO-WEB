@@ -2,49 +2,68 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Sistema Oficios</title>
-    <link rel="stylesheet" href="../assets/css/normalize.css">
-    <link rel="stylesheet" href="../assets/css/bootstrap.css">
-    <link rel="stylesheet" href="../assets/css/floatingLabel.css">
-    <link rel="stylesheet" href="../assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Sistema Oficios</title>
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/floatingLabel.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
 
 
 
 </head>
 
 <body>
-    <main class="container-fluid col-md-12 mr-1 mt-md-3 ml-0 mb-md-1" id="layout">
-        <header>
-          <nav class="nav nav-pills nav-justified text-center flex-column layoutMenu">
-            <a href="index.html">
-              <img class="figure-img mt-3 mb-3" src="https://portalrh.linhares.es.gov.br:443/uploads/brasao.png" style="height: 90px; margin-top: 6px;"
-                alt="logo">
-            </a>
-            <h2 class="text-center"><strong>MENU</strong></h2>
-            <a class="nav-link active p-2 mt-2" href="#">Oficios</a>
-            <a class="nav-link p-2 mt-2" href="#">Memorando</a>
-            <a class="nav-link p-2 mt-2" href="#">Sair</a>
-          </nav>
-        </header>
-        <section class=" container-fluid " style="background-color: lightgray;"> 
-          <h2 class="text-center font-weight-bold font-italic">Oficios</h2>
-          <h3 class="text-center font-weight-bold font-italic pt-3">Gerador Oficios</h3>
-          <article class="row mt-5">
-            <h5 class="text-center font-weight-light font-italic pt-3 col-6 ">Usuario</h5>
-            <h5 class="text-center font-weight-light font-italic pt-3 col-4 ">Setor</h5>  
-          </article>
-          
+  <main class="container-fluid col-md-12 mr-1 mt-md-3 ml-0 mb-md-1" id="layout">
+    <!--Abertura header menu-->
+    <header>
+      <nav class="nav nav-pills nav-justified text-center flex-column layoutMenu">
+        <a href="index.html">
+          <img class="figure-img mt-3 mb-3" src="https://portalrh.linhares.es.gov.br:443/uploads/brasao.png"
+            style="height: 90px; margin-top: 6px;" alt="logo">
+        </a>
+        <h2 class="text-center"><strong>MENU</strong></h2>
+        <a class="nav-link active p-2 mt-2" href="#">Oficios</a>
+        <a class="nav-link p-2 mt-2" href="#">Memorando</a>
+        <a class="nav-link p-2 mt-2" href="#">Sair</a>
+      </nav>
+    </header>
+    <!--Fechamento header menu-->
+
     
-        </section>
-      </main>
-    <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
-    <script src="../assets/js/popper.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/fontawesome.min.js"></script>
-    <script src="../assets/js/script.js"></script>
+    <div class="container text-center">      
+      <!--Abertura section titulo-->
+      <section class=" container-fluid " style="background-color: lightgray;">
+        <h2 class="text-center font-weight-bold font-italic">Oficios</h2>
+        <h3 class="text-center font-weight-bold font-italic pt-3">Gerador Oficios</h3>
+        <article class="row mt-5">
+          <h5 class="text-center font-weight-light font-italic pt-3 col-6 ">Usuario</h5>
+          <h5 class="text-center font-weight-light font-italic pt-3 col-4 ">Setor</h5>
+        </article>
+      </section>
+      <!--Abertura section titulo-->
+
+      <!--Abertura section form oficios-->
+      <section>
+        <div class="form-group container m-3">
+          <form class=" form-row " action="">
+            <input class=" centralizar col-2" type="text" name="numOficio" id="idNumOficio" placeholder="Numero Oficios">
+            <input class=" centralizar col-2" type="date" name="dataOficio" id="idDtOficio" placeholder="Data">
+            <input class=" centralizar col-8" type="text" name="assOficio" id="idAssOficio" placeholder="Assunto">
+            <input class="col-12" type="text" name="destOficio" id="idDestOficio" placeholder="Destinatário">
+          </form>
+        </div>
+      </section>
+    </div>
+    <!--Fechamento container conteudo princial-->
+  </main>
+  <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/fontawesome.min.js"></script>
+  <script src="../assets/js/script.js"></script>
 </body>
 
 
