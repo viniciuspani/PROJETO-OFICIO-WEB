@@ -16,8 +16,9 @@
 </head>
 
 <body>
+  <!--Abertura Main container princial sistema-->
   <main class="container-fluid col-md-12 mr-1 mt-md-3 ml-0 mb-md-1" id="layout">
-    <!--Abertura header menu-->
+    <!--Abertura Header menu-->
     <header>
       <nav class="nav nav-pills nav-justified text-center flex-column layoutMenu">
         <a href="index.html">
@@ -30,11 +31,11 @@
         <a class="nav-link p-2 mt-2" href="#">Sair</a>
       </nav>
     </header>
-    <!--Fechamento header menu-->
+    <!--Fechamento Header menu-->
 
-    
+    <!--Abertura Div container conteudo princial-->
     <div class="containerSistema text-center">      
-      <!--Abertura section titulo-->
+      <!--Abertura Section titulo-->
       <section class=" container-fluid ">
         <h2 class="text-center font-weight-bold font-italic">Oficios</h2>
         <h3 class="text-center font-weight-bold font-italic pt-3">Gerador Oficios</h3>
@@ -43,22 +44,56 @@
           <h5 class="text-center font-weight-light font-italic pt-3 col-4 ">Setor</h5>
         </article>
       </section>
-      <!--Abertura section titulo-->
+      <!--Fechamento Section titulo-->
 
-      <!--Abertura section form oficios-->
+      <!--Abertura Section form oficios-->
       <section>
         <div class="form-group container m-3">
           <form class=" form-row " action="">
-            <input class=" centralizar col-2" type="text" name="numOficio" id="idNumOficio" placeholder="Numero Oficios">
-            <input class=" centralizar col-2" type="date" name="dataOficio" id="idDtOficio" placeholder="Data">
-            <input class=" centralizar col-8" type="text" name="assOficio" id="idAssOficio" placeholder="Assunto">
-            <input class="col-12" type="text" name="destOficio" id="idDestOficio" placeholder="Destinatário">
+            <input class=" mx-auto col-2" type="text" name="numOficio" id="idNumOficio" placeholder="Numero Oficios">
+            <input class=" mx-auto col-2" type="date" name="dataOficio" id="idDtOficio" placeholder="Data">
+            <input class=" mx-auto col-8" type="text" name="assOficio" id="idAssOficio" placeholder="Assunto">
+            <input class="mx-auto col-12" type="text" name="destOficio" id="idDestOficio" placeholder="Destinatário">
           </form>
         </div>
       </section>
+
+      <section>
+        <table class="table table-hover">
+          <thead>
+            <tr>
+              <th scope="col">Numero Oficio</th>
+              <th scope="col">Data</th>
+              <th scope="col">Assunto</th>
+              <th scope="col">Destinatário</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Larry</td>
+              <td>the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
     </div>
-    <!--Fechamento container conteudo princial-->
+  <!--Fechamento Div container conteudo princial-->  
   </main>
+  <!--Fechamento Main container princial sistema-->
   <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
   <script src="../assets/js/popper.min.js"></script>
   <script src="../assets/js/bootstrap.min.js"></script>
