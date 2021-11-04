@@ -26,3 +26,8 @@
     width: 950px;
     min-height:100%;
 }
+
+input [espaco]{
+    justify-content: space-between;
+    
+}
