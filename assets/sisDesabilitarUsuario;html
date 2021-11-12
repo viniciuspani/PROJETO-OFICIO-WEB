@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Sistema Oficios</title>
+  <link rel="stylesheet" href="../assets/css/normalize.css">
+  <link rel="stylesheet" href="../assets/css/bootstrap.css">
+  <link rel="stylesheet" href="../assets/css/floatingLabel.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+
+
+</head>
+
+<body>
+  <!--Abertura Main container princial sistema-->
+  <main class="container-fluid col-md-12 mr-1 mt-md-3 ml-0 mb-md-1" id="layout">
+    <!--Abertura Header menu-->
+    <header>
+      <nav class="nav nav-pills nav-justified text-center flex-column layoutMenu">
+        <a href="index.html">
+          <img class="figure-img mt-5 mb-4" src="https://portalrh.linhares.es.gov.br:443/uploads/brasao.png"
+            style="height: 90px; margin-top: 6px;" alt="logo">
+        </a>
+        <h2 class="text-center"><strong>MENU</strong></h2>
+        <a class="nav-link active p-2 mt-4" href="sisCadastroUser.html">Cadastro</a>
+        <a class="nav-link p-2 mt-4" href="sisAlteracaoUser.html">Alterar</a>
+        <a class="nav-link p-2 mt-4" href="sisAlteracaoUser.html">Desabilitar</a>
+        <a data-toggle="modal" data-target="#modalFecharSistema" class="nav-link p-2 mt-4" href="#">Sair</a>
+      </nav>
+    </header>
+    <!--Fechamento Header menu-->
+
+    <!--Abertura Div container conteudo princial-->
+    <div class="containerSistema text-center">
+      <!--Abertura Section titulo-->
+      <section class=" container-fluid ">
+        <h2 class="m-3 text-center font-weight-bold font-italic">Sistema Oficios</h2>
+        <h3 class="text-center font-weight-bold font-italic pt-3">Desabilitar Usuario</h3>
+        <article class="row mt-5">
+          <h5 class="text-center font-weight-light font-italic pt-3 col-6 ">Usuario</h5>
+          <h5 class="text-center font-weight-light font-italic pt-3 col-4 ">Setor</h5>
+        </article>
+      </section>
+      <!--Fechamento Section titulo-->
+
+      <!--Abertura Section form oficios-->      
+      <section class="mt-4">
+        <div class="form-group container m-2">            
+          <form class=" form-row " action="">
+              
+
+            <input class=" mb-2  col-7 text-center" type="text" name="nmUser" id="nomeUser"
+              placeholder="Nome Usuario">
+            <input class=" mb-2 p-1 col-5 text-center" type="text" name="stUser" id="setorUser" placeholder="Setor Usuario">
+            
+            <input class=" mb-2 p-1 col-7 text-center" type="text" name="user" id="idUser" placeholder="Usuario">
+            <input class=" mb-2 col-5 text-center" type="text" name="senha" id="idSenha" placeholder="Senha">
+          </form>
+        </div>
+      </section>
+
+      
+      <!--Abertura Section Botao-->
+      <section class="mt-5 m">
+        <div class="btn-toolbar ml-3">          
+          <div class="btn-group " style="margin-left: 865px;">
+            <button type="button" class="  btn btn-secondary btn-block " type="submit" >Salvar</button>
+          </div>
+        </div>
+      </section>
+      <!--Fechamento Section Botao-->
+    </div>
+    <!--Fechamento Div container conteudo princial-->
+    
+    <!--Abertura Modal encerramento sistema-->
+    <div class="modal fade" id="modalFecharSistema" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Alerta</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Deseja sair do sistema?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Não</button>
+            <button type="button" class="btn btn-primary" id="fecharSistema">Sim</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Fechamento Modal encerramento sistema-->
+  </main>
+  <!--Fechamento Main container princial sistema-->
+  <script src="../assets/js/jquery-3.3.1.slim.min.js"></script>
+  <script src="../assets/js/popper.min.js"></script>
+  <script src="../assets/js/bootstrap.min.js"></script>
+  <script src="../assets/js/fontawesome.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+
+
+
+
+
+
+</html>
