@@ -26,9 +26,9 @@
             style="height: 90px; margin-top: 6px;" alt="logo">
         </a>
         <h2 class="text-center"><strong>MENU</strong></h2>
-        <a class="nav-link active p-2 mt-4" href="sisCadastroUser.html">Cadastro</a>
+        <a class="nav-link  p-2 mt-4" href="sisCadastroUser.html">Cadastro</a>
         <a class="nav-link p-2 mt-4" href="sisAlteracaoUser.html">Alterar</a>
-        <a class="nav-link p-2 mt-4" href="sisAlteracaoUser.html">Desabilitar</a>
+        <a class="nav-link active p-2 mt-4" href="sisDesabilitarUsuario.html">Desabilitar</a>
         <a data-toggle="modal" data-target="#modalFecharSistema" class="nav-link p-2 mt-4" href="#">Sair</a>
       </nav>
     </header>
@@ -47,35 +47,43 @@
       </section>
       <!--Fechamento Section titulo-->
 
-      <!--Abertura Section form oficios-->      
-      <section class="mt-4">
-        <div class="form-group container m-2">            
-          <form class=" form-row " action="">
-              
+      <!--Abertura Select Setor-->
+      <div class="mx-1 mt-5 text-left" >
+        <label class="form-label-group">Selecionar Setor</label>
+      <select class="form-control" name="setor" id="setor">
+        <optgroup label="Setor">
+          <option value="" selected>-----</option>
+          <option value="">Compras</option>
+          <option value="">Gabinete</option>
+        </optgroup>
+      </select>
+      <!--Fechamento Select Setor-->
+      <br><br>
+      <!--Abertura Select Usuario-->
+      <label class="form-label-group" for="">Selecionar Usuario</label>
+      <select class="form-control" name="user" id="user">
+        <optgroup label="Usuario">
+          <option value="" selected>----</option>
+          <option value="">User 01</option>
+          <option value="">User 01</option>
+        </optgroup>
+      </select>
+    </div>
+      <!--Fechamento Select Usuario-->     
 
-            <input class=" mb-2  col-7 text-center" type="text" name="nmUser" id="nomeUser"
-              placeholder="Nome Usuario">
-            <input class=" mb-2 p-1 col-5 text-center" type="text" name="stUser" id="setorUser" placeholder="Setor Usuario">
-            
-            <input class=" mb-2 p-1 col-7 text-center" type="text" name="user" id="idUser" placeholder="Usuario">
-            <input class=" mb-2 col-5 text-center" type="text" name="senha" id="idSenha" placeholder="Senha">
-          </form>
-        </div>
-      </section>
 
-      
       <!--Abertura Section Botao-->
-      <section class="mt-5 m">
-        <div class="btn-toolbar ml-3">          
-          <div class="btn-group " style="margin-left: 865px;">
-            <button type="button" class="  btn btn-secondary btn-block " type="submit" >Salvar</button>
+      <section class="mt-5">
+        <div class="btn-toolbar ml-3">
+          <div class="btn-group " style="margin-left: 835px;">
+            <button type="button" class="  btn btn-secondary btn-block " type="submit">Desabilitar</button>
           </div>
         </div>
       </section>
       <!--Fechamento Section Botao-->
     </div>
     <!--Fechamento Div container conteudo princial-->
-    
+
     <!--Abertura Modal encerramento sistema-->
     <div class="modal fade" id="modalFecharSistema" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
       aria-hidden="true">
